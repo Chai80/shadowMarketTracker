@@ -1,0 +1,11 @@
+{
+  "series_ids": ["DGS10", "DGS2", "FEDFUNDS"],
+  "spreads": [
+    ["DGS10", "DGS2"],
+    ["DGS10", "FEDFUNDS"]
+  ],
+  "dateRange": {
+    "observationStart": "1968-01-01",
+    "observationEnd": "2025-04-08"
+  }
+}
