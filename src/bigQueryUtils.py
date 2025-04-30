@@ -85,11 +85,13 @@ def upload_fiat_trades_to_bq(df, project_id, dataset_id, table_id, tag):
     bigquery.SchemaField("low", "FLOAT"),
     bigquery.SchemaField("close", "FLOAT"),
     bigquery.SchemaField("volume", "FLOAT"),
-    bigquery.SchemaField("vwap", "FLOAT"),  # ← Add this line
+    bigquery.SchemaField("vwap", "FLOAT"),
     bigquery.SchemaField("exchange", "STRING"),
     bigquery.SchemaField("symbol", "STRING"),
     bigquery.SchemaField("adjusted_pair", "STRING"),
     bigquery.SchemaField("label", "STRING"),
+    bigquery.SchemaField("usdt_volume", "FLOAT"),  #  NEW
+    bigquery.SchemaField("fiat_volume", "FLOAT"),  #  NEW
     ]
 
     table_ref = f"{project_id}.{dataset_id}.{table_id}"
