@@ -1,3 +1,4 @@
 def insecure(user_input):
     # Synthetic vulnerability for MCP demo
-    eval(user_input)
+    # Removed eval() for security - use safer alternatives instead
+    return f"Input received: {user_input}"
